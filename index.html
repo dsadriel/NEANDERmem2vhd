@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEANDER Memory File to VHDL</title>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>
+            <b>Este aplicativo possibilita a conversão de arquivos de memória do NEANDER para o formato VHDL</b>, facilitando
+        sua utilização em testes relacionados à implementação do projeto final da disciplina de Circuitos Digitais,
+        ministrada pelo professor Ribas.
+
+        Para utilizar, basta selecionar o arquivo de memória que deseja converter e o arquivo VHDL será gerado automaticamente.
+        </p>
+        <br><br>
+        <input type="file" name="Arquivo de Memória" id="memFile" onchange="loadFile()" accept=".mem">
+    </header>
+    <main style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div>
+            <details>
+                <summary>
+                    <h2>Tabela de memória</h2>
+                </summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Endereço</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="memTable">
+                    </tbody>
+                </table>
+            </details>
+        </div>
+        <div>
+            <h2>Resultado em VHDL</h2>
+            <pre id="vhdlResult">
+            </pre>
+            <p>
+                <a href="https://github.com/dsadriel/neanderMEM2VHDL" target="_blank"><img src="https://cdn.simpleicons.org/github"></a>
+                <a href="https://www.linkedin.com/in/dsadriel/" target="_blank"><img src="https://cdn.simpleicons.org/linkedin/black"></a>
+            </p>
+            
+        </div>
+    </main>
+</body>
+
+</html>

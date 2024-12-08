@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button, input {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #109D82;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0C7B6B;
+}
+
+table, pre {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(16, 157, 131, 0.15);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #109D82;
+}
+
+th {
+    background-color: #109D82;
+    color: #fff;
+}
+
+pre {
+    padding: 20px;
+    user-select: all;
+}
+
+summary > h2 {
+    display: inline;
+}
+
+a img {
+    height: 1.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+a img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
